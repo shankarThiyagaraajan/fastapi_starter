@@ -1,0 +1,26 @@
+version: "3.8"
+services:
+  sql:
+    image: "postgres:latest"
+    ports:
+      - 5433:5432
+
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: admin_password
+      POSTGRES_DB: my_db
+
+  redis:
+    image: "redis:alpine"
+
+    command: redis-server --requirepass "sOmE_sEcUrE_pA$$"
+
+    ports:
+      - "6379:6379"
+
+    volumes:
+      - ./data/db/redis/redis-data:/var/lib/redis
+      - ./data/db/redis/redis.conf:/usr/local/etc/redis/redis.conf
+
+    environment:
+      - REDIS_REPLICATION_MODE=master

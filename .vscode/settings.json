@@ -1,0 +1,34 @@
+{
+    "todo-tree.general.tags": [
+        "BUG",
+        "HACK",
+        "FIXME",
+        "TODO",
+        "PROD_CHECK",
+        "NOTE",
+        "FUTURE_NOTE"
+    ],
+    "todo-tree.highlights.customHighlight": {
+        "PROD_CHECK": {
+            "foreground": "red",
+            "background": "white",
+            "icon": "star",
+            "fontWeight": "800"
+        },
+        "BUG": {
+            "foreground": "yellow",
+            "icon": "bug"
+        },
+        "NOTE": {
+            "icon": "file"
+        },
+        "FIXME": {
+            "foreground": "white",
+            "iconColour": "yellow"
+        }
+    },
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules/*/**",
+        "**/env/*/**",
+    ]
+}
