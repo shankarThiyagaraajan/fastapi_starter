@@ -20,10 +20,10 @@ DATABASE_URL = 'postgresql://{}:{}@{}:{}/{}'.format(
 
 engine = create_engine(
     DATABASE_URL,
-    pool_size=os.getenv('DATABASE_POOL_SIZE', 10),
-    max_overflow=os.getenv('DATABASE_MAX_OVERFLOW', 20),
-    pool_timeout=os.getenv('DATABASE_POOL_TIMEOUT', 60),
-    pool_recycle=os.getenv('DATABASE_POOL_RECYCLE', 300),
+    pool_size=10,
+    max_overflow=20,
+    pool_timeout=60,
+    pool_recycle=300,
     pool_pre_ping=True
 )
 global session
