@@ -12,7 +12,6 @@ Essential packages for  FastAPI-Boilerplate as following,
 |SQLAlchemy          |2.0.36|ORM for Database|
 |APScheduler          |3.11.0|Cron and Background Tasks|
 |logzero          |1.7.0|Logger|
-|logzero          |1.7.0|Logger|
 
 
 # Installation
