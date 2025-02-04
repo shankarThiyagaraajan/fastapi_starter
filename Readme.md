@@ -1,6 +1,9 @@
 # FastAPI - Starter Setup
-[![Packagist](https://img.shields.io/badge/FastAPI-0.115.6-blue?logo=fastapi&logoColor=green)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Python-3.12.x-blue?logo=python&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Docker-Ready-greeb?logo=docker&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/SQLAlchemy-2.0.36-red?logo=SQLAlchemy&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Test-Success-greeb?logo=SQLAlchemy&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter)
+[![Packagist](https://img.shields.io/badge/FastAPI-0.115.6-blue?logo=fastapi&logoColor=green)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/OAuth-2.0-blue?logo=oauth2&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Python-3.12.x-blue?logo=python&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Docker-Ready-greeb?logo=docker&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/SQLAlchemy-2.0.36-red?logo=SQLAlchemy&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter) [![Packagist](https://img.shields.io/badge/Test-Success-greeb?logo=SQLAlchemy&logoColor=white)](https://github.com/shankarThiyagaraajan/fastapi_starter)
 
+---
+##### Read-to-Use Framework + ORM + OAuth + Docker 🎉
+---
 # Packages Included
 Essential packages for  FastAPI-Boilerplate as following,
 
@@ -12,6 +15,8 @@ Essential packages for  FastAPI-Boilerplate as following,
 |SQLAlchemy          |2.0.36|ORM for Database|
 |APScheduler          |3.11.0|Cron and Background Tasks|
 |logzero          |1.7.0|Logger|
+|Passlib          |1.7.4 |Password Hashing|  
+|Jose           |3.1.0|Auth JWT Token|
 
 
 # Installation

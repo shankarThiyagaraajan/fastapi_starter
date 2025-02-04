@@ -1,31 +1,32 @@
-# ** App Modules
-from app.service.base import BaseService
 from app.models.user import User
+from app.service.base import BaseService
 from app.helper.decorator import db
-# ** External Modules
-from logzero import logger
+from app.pyd_models import UserBase
 
 
 class UserService(BaseService):
-    def __init__(self, symbol=None):
+    def __init__(self):
+        # TODO: Make UserService to Singleton design pattern.
         super().__init__(User)
 
-    @db('activate_user')
-    def activate(self, user: User):
-        user.activate()
-        logger.info(f'User is Active | {user.email}')
+    def fetch_by_email(self, email: str, active_status=True) -> User:
+        res = self.q.filter(User.email == email)
 
-    @db('deactivate_user')
-    def deactivate(self, user: User):
+        if active_status:
+            res = res.filter(User.is_active)
+
+        return res.first()
+
+    @db('user_deactivate')
+    def deactivate(self, email):
+        user = self.q.filter(User.email == email).first()
         user.deactivate()
-        logger.info(f'User is In-Active | {user.email}')
 
-    @db('insert_stock')
-    def insert(self, user: User):
-        data = User(
-            name='bala',
-            email='bala@example.com',
-            is_active=True
-        )
-        self.s.add(data)
-        logger.info(f'New User Added | {data.email}')
+    @db('user_activate')
+    def activate(self, email):
+        user = self.q.filter(User.email == email).first()
+        user.activate()
+
+    def get_user(self, email: str) -> User:
+        res: UserBase = self.q.filter(User.email == email).first()
+        return res if res else None
