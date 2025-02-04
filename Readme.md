@@ -16,7 +16,7 @@ Essential packages for  FastAPI-Boilerplate as following,
 |APScheduler          |3.11.0|Cron and Background Tasks|
 |logzero          |1.7.0|Logger|
 |Passlib          |1.7.4 |Password Hashing|  
-|Jose           |3.1.0|Auth JWT Token|
+|Jose           |1.0.0|Auth JWT Token|
 
 
 # Installation
